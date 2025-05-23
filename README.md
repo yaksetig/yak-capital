@@ -1,1 +1,1 @@
-# yak-capital
+# Yak Capital
