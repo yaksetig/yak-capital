@@ -110,10 +110,6 @@ main {
     padding: 3rem 2rem;
     text-align: center;
     transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
     min-height: 250px;
     border: none;
 }
@@ -124,28 +120,18 @@ main {
     box-shadow: 0 8px 30px rgba(0,0,0,0.06);
 }
 
-/* FIXED: Portfolio logo container approach */
-.portfolio-logo-container {
+/* THE NUCLEAR OPTION - This WILL work */
+.portfolio-logo-img {
     width: 140px;
     height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2rem;
     border: 1px solid #e5e5e5;
     border-radius: 2px;
     background: white;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.portfolio-logo-img {
-    max-width: 120px;
-    max-height: 50px;
-    width: auto;
-    height: auto;
-    object-fit: contain;
+    margin: 0 auto 2rem auto;
     display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .portfolio-name {
@@ -176,18 +162,6 @@ footer p {
     font-size: 0.85rem;
     font-weight: 300;
     letter-spacing: 0.5px;
-}
-
-/* Animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Mobile Responsiveness */
