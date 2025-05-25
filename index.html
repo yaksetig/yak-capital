@@ -7,22 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <a href="#" class="logo">
-                <img src="#" alt="Yak Capital Logo" class="logo-img">
-                <span class="logo-text">Yak Capital</span>
-            </a>
-        </nav>
-    </header>
-
     <section class="hero">
         <div class="container">
             <div class="hero-logo">
                 <img src="images/yak_cap_logo.png" alt="Yak Capital" class="hero-logo-img">
             </div>
             <p class="hero-subtitle">Strategic investments for exceptional returns</p>
-            <a href="#" class="submit-deck-btn" id="submitDeckBtn">Submit Your Deck</a>
+            <a href="https://forms.google.com/your-form-url" class="submit-deck-btn" target="_blank">Submit Your Deck</a>
         </div>
     </section>
 
@@ -63,29 +54,6 @@
             </div>
         </section>
     </main>
-
-    <!-- Deck Submission Modal -->
-    <div id="deckModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Submit Your Pitch Deck</h2>
-            <form class="deck-form" id="deckForm">
-                <input type="text" placeholder="Company Name" required>
-                <input type="text" placeholder="Founder Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="text" placeholder="Funding Stage (Pre-seed, Seed, Series A, etc.)">
-                <input type="text" placeholder="Funding Amount Sought">
-                <textarea rows="4" placeholder="Brief description of your company and what you're building" required></textarea>
-                <div class="file-input">
-                    <input type="file" id="deckFile" accept=".pdf,.ppt,.pptx">
-                    <label for="deckFile" class="file-input-label">
-                        📎 Click to upload your pitch deck (PDF or PowerPoint)
-                    </label>
-                </div>
-                <button type="submit">Submit Pitch Deck</button>
-            </form>
-        </div>
-    </div>
 
     <footer>
         <div class="container">
