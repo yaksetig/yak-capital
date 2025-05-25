@@ -34,7 +34,7 @@ body {
 }
 
 .hero-logo-img {
-    width: 320px;
+    width: 500px;
     height: auto;
     filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
 }
@@ -120,34 +120,6 @@ main {
     box-shadow: 0 8px 30px rgba(0,0,0,0.06);
 }
 
-/* SUPER SIMPLE APPROACH - Fixed container with centered image */
-.portfolio-logo-wrapper {
-    width: 140px;
-    height: 70px;
-    border: 1px solid #e5e5e5;
-    border-radius: 2px;
-    background: white;
-    margin: 0 auto 2rem auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.portfolio-logo-img {
-    max-width: 120px;
-    max-height: 50px;
-    width: auto;
-    height: auto;
-}
-
-img.portfolio-logo-img {
-    max-width: 140px !important;
-    max-height: 70px !important;
-    width: auto !important;
-    height: auto !important;
-}
-
 .portfolio-name {
     font-size: 1.1rem;
     font-weight: 500;
@@ -181,7 +153,7 @@ footer p {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .hero-logo-img {
-        width: 240px;
+        width: 350px;
     }
 
     .hero-subtitle {
@@ -210,5 +182,11 @@ footer p {
     .submit-deck-btn {
         padding: 16px 32px;
         font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-logo-img {
+        width: 280px;
     }
 }
