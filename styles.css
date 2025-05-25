@@ -73,6 +73,24 @@ body {
     box-shadow: 0 4px 12px rgba(42,42,42,0.15);
 }
 
+.submit-deck-btn {
+    display: inline-block;
+    padding: 18px 40px;
+    background: #2a2a2a;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+
 /* Main Content */
 main {
     background: white;
