@@ -23,8 +23,8 @@ document.getElementById('deckFile').addEventListener('change', function(e) {
     const label = document.querySelector('.file-input-label');
     if (e.target.files.length > 0) {
         label.textContent = `📎 ${e.target.files[0].name}`;
-        label.style.color = '#764ba2';
-        label.style.borderColor = '#764ba2';
+        label.style.color = '#1e3a8a';
+        label.style.borderColor = '#1e3a8a';
     }
 });
 
@@ -36,7 +36,7 @@ document.getElementById('deckForm').addEventListener('submit', function(e) {
     const originalText = button.textContent;
     
     button.textContent = 'Submitting...';
-    button.style.background = '#28a745';
+    button.style.background = '#059669';
     
     // Simulate form submission
     setTimeout(() => {
@@ -44,11 +44,11 @@ document.getElementById('deckForm').addEventListener('submit', function(e) {
         setTimeout(() => {
             modal.style.display = 'none';
             button.textContent = originalText;
-            button.style.background = 'linear-gradient(45deg, #667eea, #764ba2)';
+            button.style.background = '#1e3a8a';
             this.reset();
             document.querySelector('.file-input-label').textContent = '📎 Click to upload your pitch deck (PDF or PowerPoint)';
             document.querySelector('.file-input-label').style.color = '';
-            document.querySelector('.file-input-label').style.borderColor = '#e9ecef';
+            document.querySelector('.file-input-label').style.borderColor = '#d1d5db';
         }, 2000);
     }, 1500);
 });
